@@ -2,11 +2,10 @@ import os
 from jsoncreator import json_creator_v2
 
 
-
-def mw_summary_filter(polCode, podCode, baseYearWeek, jsonResult):
+def dsbd_summary_filter(polCode, podCode, baseYearWeek, jsonResult):
     kkk = []
     a = os.path.realpath(__file__).replace('\\', '/')
-    mdmPath = a[:a.find("jsonfilter")]+"static/mdmJson"
+    mdmPath = a[:a.find("jsonfilter")] + "static/mdmJson"
     for j in range(0, len(jsonResult['cell'])):
         ttt = 0
         for i in range(0, len(jsonResult['cell'][j]['routeItem'])):
@@ -82,5 +81,39 @@ def mw_summary_filter(polCode, podCode, baseYearWeek, jsonResult):
     jsonResult['cell'] = [i for i in jsonResult['cell'] if i['lineItem'] != []]
     jsonResult['closedStsCount'] = len([i for i in jsonResult['cell'] if i['offerStatus'] == '0'])
     jsonResult['openStsCount'] = len([i for i in jsonResult['cell'] if i['offerStatus'] == '1'])
+
+    return jsonResult
+
+
+def dsbd_wklist_filter(polCode, podCode, jsonResult):
+    kkk = []
+    ttt = 0
+    for i in range(0, len(jsonResult['routeItem'])):
+        if polCode == "" and podCode == "":
+            ttt += 1
+            break
+        elif polCode != "" and podCode == "":
+            if jsonResult['routeItem'][i]['polCode'] == polCode:
+                ttt += 1
+                break
+            else:
+                continue
+        elif polCode == "" and podCode != "":
+            if jsonResult['routeItem'][i]['podCode'] == podCode:
+                ttt += 1
+                break
+            else:
+                continue
+        elif polCode != "" and podCode != "":
+            if jsonResult['routeItem']['polCode'] == polCode and \
+                    jsonResult['routeItem']['podCode'] == podCode:
+                ttt += 1
+                break
+            else:
+                continue
+        if ttt == 0:
+            kkk.append(i)
+
+    jsonResult = [i for j, i in enumerate(jsonResult) if j not in kkk]
 
     return jsonResult

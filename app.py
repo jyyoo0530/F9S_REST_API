@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 from werkzeug.serving import WSGIRequestHandler
 
 from jsoncreator import json_creator_v1, json_creator_v2
-from jsonfilter import mw_summary_filter
+from jsonfilter import dsbd_summary_filter, dsbd_wklist_filter
 
 app = Flask(__name__)
 # socketio = SocketIO(app)
@@ -22,7 +22,7 @@ srcPath = srcDir + 'src/f9s'
 ##### API #####
 @app.route('/')  # route 설정
 def hello_world():
-    return 'Hello, World!'
+    return request.environ.get('SERVER_PROTOCOL')
 
 
 # @app.route(statsPath + '/carrierlist', methods=['GET'])
@@ -67,7 +67,8 @@ def post_dsbd_wklist():
     wkListPath = "/" + userId + "/" + offerTypeCode + "/" + polCode + podCode
     fullPath = srcPath + "/F9S_DSBD_WKLIST" + wkListPath
 
-    response = json_creator_v2(fullPath)
+    jsonResult = json_creator_v2(fullPath)
+    response = dsbd_summary_filter(polCode, podCode, jsonResult)
     return jsonify(response)
 
 
@@ -84,7 +85,7 @@ def post_dsbd_summary():
     fullPath = srcPath + "/F9S_DSBD_SUM" + dsbdSumPath
 
     jsonResult = json_creator_v2(fullPath)
-    response = mw_summary_filter(polCode, podCode, baseYearWeek, jsonResult)
+    response = dsbd_summary_filter(polCode, podCode, baseYearWeek, jsonResult)
     return jsonify(response)
 
 
