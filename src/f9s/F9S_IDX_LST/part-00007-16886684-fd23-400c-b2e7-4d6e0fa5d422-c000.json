@@ -1,0 +1,282 @@
+[
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "JPWC",
+    "idxNm": "West Japan",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "AMST",
+    "idxNm": "South America (Santos)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "ASSE",
+    "idxNm": "Southeast Asia (Singapore)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "USEC",
+    "idxNm": "USEC(Base port)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "OCAN",
+    "idxNm": "Austrlian/New Zealand (Melbourne)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "EUME",
+    "idxNm": "Mediterranean(Base port)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "MDGR",
+    "idxNm": "Persian Gulf and Red Sea (Dubai)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "EUNE",
+    "idxNm": "EU(Base port)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "ASKR",
+    "idxNm": "Korea(Pusan)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "AFST",
+    "idxNm": "South Africa (Durban)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "CPST",
+    "idxNm": "Comprehensive Index",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "AFEW",
+    "idxNm": "East/West Africa (Lagos)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "JPEC",
+    "idxNm": "East Japans",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  },
+  {
+    "idxCategory": "SCFI",
+    "idxCd": "USWC",
+    "idxNm": "USWC(Base port)",
+    "idxSubject": "marketIdx",
+    "intervalItem": [
+      {
+        "interval": "yearly",
+        "intervalSeq": 13
+      },
+      {
+        "interval": "weekly",
+        "intervalSeq": 11
+      },
+      {
+        "interval": "monthly",
+        "intervalSeq": 12
+      }
+    ]
+  }
+]
